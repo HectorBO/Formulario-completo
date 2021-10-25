@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario Completo</title>
+</head>
+<body>
+<form action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php"method="post">
+<table border="2" style="text-align: center;">
+<tr>
+<td colspan="2">User Form</td>
+</tr>
+<tr>
+<td><label for="nombre">Enter name</label></td>
+<td><input type="text" id="nombre" name="nombre"></td>
+</tr>
+<tr>
+<td><label for="password">Enter password</label></td>
+<td><input type="password" id="password" name="password"></td>
+</tr>
+<tr>
+<td><label for="direccion">Enter address</label></td>
+<td><textarea id="direccion" name="direccion"></textarea></td>
+</tr>
+<tr>
+<td>Select Game</td>
+<td>
+<input type="checkbox" id="hockey" name="deportes[]" value="Football">
+<label for="hockey"> Hockey</label><br>
+<input type="checkbox" id="football" name="deportes[]" value="Football">
+<label for="football"> Football</label><br>
+<input type="checkbox" id="badminton" name="deportes[]" value="Badminton">
+<label for="badminton"> Badminton</label><br>
+<input type="checkbox" id="cricket" name="deportes[]" value="Cricket">
+<label for="cricket"> Cricket</label><br>
+<input type="checkbox" id="volleyball" name="deportes[]" value="Volleyball">
+<label for="volleyball"> Volleyball</label><br>
+</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" id="male" name="sexo" value="male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="sexo" value="female">
+<label for="female">Female</label>
+</td>
+</tr>
+<tr>
+<td><label for="edad">Select your age</label></td>
+<td>
+<select name="edad" id="edad">
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="+22">+22</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="file" id="archivo" name="archivo">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="button" value="Click Me">
+<input type="reset" value="Restablecer">
+<input type="submit" value="Submit Form">
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>
